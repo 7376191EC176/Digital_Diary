@@ -1,0 +1,314 @@
+/* CSS for the digital diary project */
+
+#amount-spend-value,
+#progress-index-value {
+  width: 40%;
+}
+
+#background-img {
+  height: 20rem;
+  width: 30rem;
+}
+
+#daily-info {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 13% 87%;
+  height: fit-content;
+  margin: 2%;
+  margin-top: 0%;
+  padding: 2%;
+}
+
+#daily-info > div > div {
+  background-color: #ebabefd6;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+#data {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 80%;
+}
+#date,
+#special-events {
+  width: 50%;
+}
+
+#display-event {
+  margin-bottom: 6%;
+}
+
+#event {
+  display: grid;
+  grid-template-rows: 38% 62%;
+  gap: 4%;
+}
+
+#event > div {
+  background-color: #efdaeb;
+  border-radius: 10px;
+  padding: 4%;
+  text-align: center;
+}
+
+#event div > button {
+  background-color: #cd5175;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 84%;
+  font-family: "Times New Roman", Times, serif;
+  margin: 4px 0;
+  padding: 7px 10px;
+  width: fit-content;
+}
+
+#event > div > div {
+  color: #c75487;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#event-date,
+#event-name {
+  width: 70%;
+}
+
+#first-page {
+  color: #ca73cd;
+  font-size: 200%;
+  text-align: center;
+  height: 80%;
+  padding: 1%;
+}
+
+#first-page > div > div {
+  align-items: center;
+  background-color: #ccb0ca;
+  border-radius: 4%;
+  color: black;
+  flex-direction: column;
+  font-size: 55%;
+  justify-content: space-evenly;
+  height: 40%;
+  padding: 3%;
+  row-gap: 5%;
+  width: 20%;
+}
+
+#first-page > div > div > button {
+  background-color: #cd5175;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  margin: 4%;
+  padding: 3% 0%;
+  width: 80%;
+}
+
+#first-page > div > div > div > button {
+  width: fit-content;
+  background-color: #cd5175;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 90%;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#general-notes,
+#list-of-events {
+  font-size: 110%;
+  height: 200px;
+  width: 90%;
+}
+
+#home-page {
+  display: none; /*grid*/
+  grid-template-columns: 28.5% 70%;
+  gap: 1.5%;
+}
+
+#login-signup {
+  display: flex; /*flex*/
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+#logout {
+  background-color: #efdaeb;
+  border: none;
+}
+
+#logout-icon {
+  height: 20px;
+  width: 20px;
+}
+
+#none {
+  display: none;
+}
+
+#save {
+  background-color: #cd5175;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 100%;
+  font-family: "Times New Roman", Times, serif;
+  margin: 4px 0;
+  padding: 7px 10px;
+  width: fit-content;
+}
+
+#search {
+  background-color: #cd5175a6;
+}
+
+#search-tab {
+  align-items: center;
+  color: #700f0f;
+  display: none;
+  font-size: 110%;
+  font-weight: bold;
+  justify-content: space-evenly;
+}
+
+#search-tab > div {
+  width: 100%;
+}
+
+#signup-info {
+  display: none;
+}
+
+#special-event-list {
+  max-height: 300px;
+  overflow: auto;
+}
+
+#special-event-title {
+  padding-bottom: 2%;
+}
+
+#tab-switch {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#tab-switch > button {
+  width: 40%;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#title {
+  align-items: center;
+  color: #c75487;
+  display: grid;
+  font-size: 120%;
+  font-weight: bold;
+  grid-template-columns: 70% 30%;
+  justify-items: center;
+  margin: 1%;
+  padding: 1%;
+}
+
+#today {
+  background-color: #cd5175;
+}
+
+#update {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+}
+
+#user {
+  align-items: flex-end;
+  display: flex;
+  gap: 18px;
+  justify-content: space-evenly;
+}
+
+#userdata {
+  background-color: #efdaeb;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 12% 88%;
+}
+
+#username {
+  color: #864461;
+  font-size: 130%;
+}
+
+.event-card {
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  font-size: 86%;
+  font-weight: normal;
+  margin: 0% 3% 4% 0%;
+  padding: 3%;
+  text-align: start;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a53978;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b929ae;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b929aec4;
+}
+
+input[type="text"],
+[type="password"],
+[type="date"],
+[type="number"],
+[list],
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 100%;
+  font-family: "Times New Roman", Times, serif;
+  margin: 3% 1%;
+  padding: 3%;
+  width: 90%;
+}

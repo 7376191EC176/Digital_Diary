@@ -1,0 +1,174 @@
+<!-- Title: Digital Diary
+HTML file -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Diary</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="visibility">
+      <div id="first-page">
+        Digital Diary
+        <div id="login-signup">
+          <img id="background-img" src="./assets/background.jpg" />
+          <div id="login-info">
+            <input
+              type="text"
+              id="login-userid"
+              name="login-userid"
+              placeholder="UserID"
+            />
+            <input
+              type="password"
+              id="login-password"
+              name="login-password"
+              placeholder="Password"
+            />
+            <button id="login-submit">Submit</button>
+            <div>
+              If you not have an account <button id="signup">Signup</button>
+            </div>
+          </div>
+          <div id="signup-info">
+            <input
+              type="text"
+              id="signup-userid"
+              name="signup-userid"
+              placeholder="UserID"
+            />
+            <input
+              type="password"
+              id="signup-password1"
+              name="signup-password1"
+              placeholder="Password"
+            />
+            <input
+              type="password"
+              id="signup-password2"
+              name="signup-password2"
+              placeholder="Re-Enter Password"
+            />
+            <button id="signup-submit">Submit</button>
+            <div>
+              If already have an account <button id="login">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home-page">
+        <div id="event">
+          <div id="add-event">
+            <div>Add Event<br /></div>
+            <label for="event-date">Date:</label>
+            <input type="date" id="event-date" name="event-date" /><br />
+            <label for="event-name">Event:</label>
+            <input type="text" id="event-name" name="event-name" /><br />
+            <div><button id="add-special-event">Add Event</button></div>
+          </div>
+          <div id="display-event">
+            <div id="special-event-title">Events of the day and following:</div>
+            <div id="none">
+              <div class="event-card"></div>
+            </div>
+            <div id="special-event-list"></div>
+          </div>
+        </div>
+        <div id="userInfo">
+          <div id="userdata">
+            <div id="title">
+              <div>Expense(for this month) : <span id="expense"></span></div>
+              <div id="user">
+                <div id="username"></div>
+                <button id="logout">
+                  <img id="logout-icon" src="/assets/logout.png" />
+                </button>
+              </div>
+            </div>
+            <div id="daily-info">
+              <div id="tab-switch">
+                <button id="today">Today</button>
+                <button id="search">Search</button>
+              </div>
+              <div>
+                <div id="today-tab">
+                  <div id="update"><button id="save">Save</button></div>
+                  <div id="search-tab">
+                    <div id="search-by-date">
+                      <label for="date"> Search By Date:</label>
+                      <input type="date" id="date" name="date" />
+                    </div>
+                    <div id="search-by-event">
+                      <label for="special-events">
+                        Search By Special Event:</label
+                      >
+                      <input
+                        list="special-events-list"
+                        name="special-events"
+                        id="special-events"
+                      />
+                      <datalist id="special-events-list"> </datalist>
+                    </div>
+                  </div>
+                  <div id="data">
+                    <div id="progress-index">
+                      <label for="progress-index-value"
+                        >Progress Index (in %) :</label
+                      >
+                      <input
+                        type="number"
+                        id="progress-index-value"
+                        name="progress-index-value"
+                        min="0"
+                        max="100"
+                        oninput="this.value=(parseInt(this.value)<0)?0:parseInt(this.value)>100?100:this.value"
+                        placeholder="Range from 0 to 100"
+                      />
+                    </div>
+                    <div id="amount-spend">
+                      <label for="amount-spend-value">Amount spend :</label>
+                      <input
+                        type="number"
+                        id="amount-spend-value"
+                        name="amount-spend-value"
+                        min="0"
+                        oninput="this.value=(parseInt(this.value)<0)?0:this.value"
+                        placeholder="in rupees"
+                      />
+                    </div>
+                    <div id="event-list">
+                      <label for="list-of-events">List of Events:</label>
+                      <textarea
+                        id="list-of-events"
+                        name="list-of-events"
+                        rows="12"
+                        cols="50"
+                      >
+                      </textarea>
+                    </div>
+                    <div id="General">
+                      <label for="general-notes">General:</label>
+                      <textarea
+                        id="general-notes"
+                        name="general-notes"
+                        rows="12"
+                        cols="50"
+                      >
+                      </textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
